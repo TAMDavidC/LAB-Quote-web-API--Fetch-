@@ -25,7 +25,7 @@ window.addEventListener("DOMContentLoaded", function () {
       if (quotes.error){
          document.querySelector("#quotes").innerHTML = quotes.error;
       }
-      
+
       else{
          let html = "<ol>";
          for (let c = 1; c <= count; c++) {
@@ -33,7 +33,7 @@ window.addEventListener("DOMContentLoaded", function () {
             console.log(data.quote)
             let quote = data.quote;
             let source = data.source;
-            html += `<li>Quote ${data.quote} - ${data.source}</li>`;
+            html += `<li>${data.quote} - ${data.source}</li>`;
          }
          html += "</ol>";
 
